@@ -147,11 +147,9 @@ Script:
 forge create lib/v3-periphery/contracts/NonfungibleTokenPositionDescriptor.sol:NonfungibleTokenPositionDescriptor  \
 --constructor-args-path src/deployConstructor/NonfungibleTokenPositionDescriptor.txt \
 --private-key $devTestnetPrivateKey \
---rpc-url $baseSepoliaHTTPS \
---etherscan-api-key $basescanApiKey \
+--rpc-url https://rpc.testnet.fluent.xyz \
 --broadcast \
---libraries lib/v3-periphery/contracts/libraries/NFTDescriptor.sol:NFTDescriptor:<contract_address> \
---verify 
+--libraries lib/v3-periphery/contracts/libraries/NFTDescriptor.sol:NFTDescriptor:<contract_address>
 ```
 
 ### Step 5: Deploy NonfungiblePositionManager
@@ -202,7 +200,7 @@ https://testnet.fluentscan.xyz/address/0x41Ae7549023a7F0b6Cb7FE4d1807487b18cbAe1
 
 #### NonfungibleTokenPositionDescriptor
 
-https://sepolia.basescan.org/address/0xc0135dfcf073d065fa07b499e32767e2ab3e2350#code
+https://testnet.fluentscan.xyz/address/0x74Dd8B7Cb08b4F7B7b38d0755883DE68c548c9A0
 
 #### NonfungiblePositionManager
 
