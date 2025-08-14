@@ -98,10 +98,11 @@ Note: swaps will fail if POOL_INIT_CODE_HASH is not set correctly.
 forge create lib/v3-periphery/contracts/SwapRouter.sol:SwapRouter \
 --constructor-args-path src/deployConstructor/SwapRouter.txt \
 --private-key $devTestnetPrivateKey \
---rpc-url $baseSepoliaHTTPS \
---etherscan-api-key $basescanApiKey \
+--rpc-url https://rpc.testnet.fluent.xyz \
 --broadcast \
---verify 
+--verify \
+--verifier blockscout \
+--verifier-url https://testnet.fluentscan.xyz/api/
 ```
 
 ### Step 3: Deploy NFTDescriptor
