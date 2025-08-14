@@ -69,10 +69,11 @@ Script:
 ```shell
 forge create lib/v3-core/contracts/UniswapV3Factory.sol:UniswapV3Factory  \
 --private-key $devTestnetPrivateKey \
---rpc-url $baseSepoliaHTTPS \
---etherscan-api-key $basescanApiKey \
+--rpc-url https://rpc.testnet.fluent.xyz \
 --broadcast \
---verify 
+--verify \
+--verifier blockscout \
+--verifier-url https://testnet.fluentscan.xyz/api/
 ```
 
 ### Step 2: Deploy SwapRouter 
