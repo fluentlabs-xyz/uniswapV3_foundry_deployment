@@ -110,10 +110,11 @@ forge create lib/v3-periphery/contracts/SwapRouter.sol:SwapRouter \
 ```shell
 forge create lib/v3-periphery/contracts/libraries/NFTDescriptor.sol:NFTDescriptor  \
 --private-key $devTestnetPrivateKey \
---rpc-url $baseSepoliaHTTPS \
---etherscan-api-key $basescanApiKey \
+--rpc-url https://rpc.testnet.fluent.xyz \
 --broadcast \
---verify 
+--verify \
+--verifier blockscout \
+--verifier-url https://testnet.fluentscan.xyz/api/
 ```
 
 ### Step 4: Deploy NonfungibleTokenPositionDescriptor
@@ -185,19 +186,19 @@ forge create lib/v3-periphery/contracts/NonfungiblePositionManager.sol:Nonfungib
 
 ## Deployments 
 
-### Base Sepolia
+### Fluent Testnet Sepolia
 
 #### UniswapV3Factory
 
-https://sepolia.basescan.org/address/0x25c1c9245098606091e74a6f07063e3ff50524e2#code
+https://testnet.fluentscan.xyz/address/0xE8eb488bEe284ed5b9657D5fc928f90F40BC2d57
 
 #### SwapRouter
 
-https://sepolia.basescan.org/address/0xe0f5dfde6cc9770e2e45d91832cae8d4fee20526#code
+https://testnet.fluentscan.xyz/address/0xd8DEaA13846ae4f2f20f1e7B82AC60D5130BF5Cd
 
 #### NFTDescriptor
 
-https://sepolia.basescan.org/address/0x6b0c2530ec1c8c4a56e2cfc6c4c2ecf5af0ea267#code
+https://testnet.fluentscan.xyz/address/0x41Ae7549023a7F0b6Cb7FE4d1807487b18cbAe10
 
 #### NonfungibleTokenPositionDescriptor
 
