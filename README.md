@@ -146,10 +146,13 @@ Script:
 ```shell
 forge create lib/v3-periphery/contracts/NonfungibleTokenPositionDescriptor.sol:NonfungibleTokenPositionDescriptor  \
 --constructor-args-path src/deployConstructor/NonfungibleTokenPositionDescriptor.txt \
+--libraries lib/v3-periphery/contracts/libraries/NFTDescriptor.sol:NFTDescriptor:<contract_address> \
 --private-key $devTestnetPrivateKey \
 --rpc-url https://rpc.testnet.fluent.xyz \
 --broadcast \
---libraries lib/v3-periphery/contracts/libraries/NFTDescriptor.sol:NFTDescriptor:<contract_address>
+--verify \
+--verifier blockscout \
+--verifier-url https://testnet.fluentscan.xyz/api/
 ```
 
 ### Step 5: Deploy NonfungiblePositionManager
@@ -201,8 +204,8 @@ https://testnet.fluentscan.xyz/address/0x41Ae7549023a7F0b6Cb7FE4d1807487b18cbAe1
 
 #### NonfungibleTokenPositionDescriptor
 
-https://testnet.fluentscan.xyz/address/0x74Dd8B7Cb08b4F7B7b38d0755883DE68c548c9A0
+https://testnet.fluentscan.xyz/address/0xc26ea02fb53594952b64559278bD0622555584e4
 
 #### NonfungiblePositionManager
 
-https://testnet.fluentscan.xyz/address/0x4e172DBEF259C46DE56ef953F29215640A664B31
+https://testnet.fluentscan.xyz/address/0x61B00321567CBcBcb02f2a86742b48C381aCD0d6
