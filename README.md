@@ -176,10 +176,11 @@ Script:
 forge create lib/v3-periphery/contracts/NonfungiblePositionManager.sol:NonfungiblePositionManager  \
 --constructor-args-path src/deployConstructor/NonfungiblePositionManager.txt \
 --private-key $devTestnetPrivateKey \
---rpc-url $baseSepoliaHTTPS \
---etherscan-api-key $basescanApiKey \
+--rpc-url https://rpc.testnet.fluent.xyz \
 --broadcast \
---verify 
+--verify \
+--verifier blockscout \
+--verifier-url https://testnet.fluentscan.xyz/api/
 ```
 
 ## Deployments 
@@ -204,5 +205,4 @@ https://testnet.fluentscan.xyz/address/0x74Dd8B7Cb08b4F7B7b38d0755883DE68c548c9A
 
 #### NonfungiblePositionManager
 
-https://sepolia.basescan.org/address/0x8e83df10fbf319ff7344009a78b5bf2e89a5e4df#code 
-
+https://testnet.fluentscan.xyz/address/0x4e172DBEF259C46DE56ef953F29215640A664B31
